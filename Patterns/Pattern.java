@@ -2,6 +2,8 @@ package Patterns;
 
 import java.util.Scanner;
 
+import javax.swing.text.Style;
+
 public class Pattern {
     public static void pattern1(int n) {
         for (int i = 0; i < n; i++) {
@@ -196,12 +198,135 @@ public class Pattern {
         }
     }
 
+    private static void pattern18(int n) {
+        
+        for(int i=0; i<n; i++){
+            char ch='A';
+            ch+=n-i-1;
+            for(int j=0; j<=i; j++){
+                System.out.print(ch+ " ");
+                ch++;
+            }
+            System.out.println(" ");
+        }
+    }
+
+    private static void pattern19(int n) {
+        int inis=0;
+        int inis1=0;
+        for(int i=0; i<n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            for(int j=0; j<inis; j++){
+                System.out.print("  ");
+            }
+            inis+=2;
+             for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+            inis1=inis-2;
+        }
+        for(int i=n-1; i>=0; i--){
+            for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            for(int j=0; j<inis1; j++){
+                System.out.print("  ");
+            }
+            inis1-=2;
+             for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+
+    private static void pattern20(int n) {
+        int inis=2*n-2;
+        int inis1=0;
+        for(int i=n-1; i>=0; i--){
+            for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            for(int j=0; j<inis; j++){
+                System.out.print("  ");
+            }
+            inis-=2;
+             for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+         for(int i=0; i<n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            for(int j=0; j<inis1; j++){
+                System.out.print("  ");
+            }
+            inis1+=2;
+             for(int j=1; j<=n-i; j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+
+
+
+
+
+
+      private static void pattern21(int n) {
+        for(int i=0; i<n ;i++){
+            for(int j=0; j<n; j++){
+                if(i==0 || i==n-1 ||  j==0 || j==n-1) System.out.print("*"+" ");
+                else System.out.print("  ");
+            }
+            System.out.println("");
+        }
+    }
+
+
+
+
+
+     private static void pattern22(int n) {
+        for(int i=0; i<2*n-1; i++){
+            for(int j=0; j<2*n-1; j++){
+                int top=i;
+                int left=j;
+                int right =2*(n-1)-j;
+                int down =2*(n-1)-i;
+                System.out.print(n-Math.min(Math.min(top,down), Math.min(right, left)));
+            }
+            System.out.println(" ");
+        }
+
+    }
+
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter the number : ");
             int n = sc.nextInt();
-            pattern17(n);
+            pattern22(n);
         }
     }
+
+   
+
+  
+
+    
+
+    
+
+    
 
 }
