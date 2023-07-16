@@ -2,9 +2,10 @@ package Hashing;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
-import java.util.Scanner;
 
-import hMap.EntrySet;
+import Hashing.hMap.EntrySet;
+
+import java.util.Scanner;
 
 public class FindingHighestFrequencyAndLowestFrequencyElement {
     public static void main(String[] args) {
