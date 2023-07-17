@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Easy;
 
 public class SortedorNot {
     public static int isSorted(int n, int []a) {

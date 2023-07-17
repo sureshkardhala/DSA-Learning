@@ -1,6 +1,6 @@
-package Arrays;
+package Arrays.Easy;
 
-public class RotateAnArray {
+public class LeftRotatenArray {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
         reverse(nums, 0, nums.length - 1); // Reverse the entire array

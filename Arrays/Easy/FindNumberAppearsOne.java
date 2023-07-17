@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Easy;
 
 public class FindNumberAppearsOne {
     public int singleNumber(int[] nums) {

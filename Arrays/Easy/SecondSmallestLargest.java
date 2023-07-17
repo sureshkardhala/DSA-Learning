@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Easy;
 public class SecondSmallestLargest {
     public static int[] getSecondOrderElements(int n, int []a) {
         // Write your code here.
