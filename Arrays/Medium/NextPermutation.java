@@ -1,3 +1,4 @@
+package Arrays.Medium;
 public class NextPermutation {
     public static void reverse(int []nums, int left, int right){
         while(left <right){
