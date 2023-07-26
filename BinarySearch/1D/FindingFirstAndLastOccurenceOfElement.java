@@ -44,8 +44,6 @@ public class FindingFirstAndLastOccurenceOfElement {
     }
 
     public int[] searchRange(int[] nums, int target) {
-        int low=0;
-        int high=nums.length-1;
         int ans[]=new int[2];
         ans[0]=searchFirst(nums,target);
         ans[1]=searchLast(nums,target);
